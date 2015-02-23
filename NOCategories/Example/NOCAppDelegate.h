@@ -8,10 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NOCAppDelegate : UIResponder <UIApplicationDelegate>
+@interface NOCAppDelegate : UIResponder<UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-
 @end
-

@@ -10,6 +10,5 @@
 
 @interface NOCExampleViewController : UIViewController
 
-
 @end
 
