@@ -30,7 +30,10 @@ noc_fString(@"hello", worldString)
 noc_lString(@"hello")
 ```
 If you're using genstrings, before generating it you need to replace defines to NSLocalizedString.
-Find: noc_lString((@\"\w+\")) Replace: NSLocalizedString(\1, \1)
+```bash
+Find: noc_lString((@\"\w+\")) 
+Replace: NSLocalizedString(\1, \1)
+```
 Now you can use genstrings. Then reset everything besides the localization files.
 As for me this way is faster and more convenient to see, but if you don't like it - don't use it ^^.
 ### Bit operations
