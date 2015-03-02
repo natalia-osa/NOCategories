@@ -39,7 +39,7 @@ As for me this way is faster and more convenient to see, but if you don't like i
 ### Bit operations
 If you're having a variable and want to change bits inside but never remember the operations, just use:
 ```objective-c
-typedef NS_ENUM(NSUInteger, NOCDifficulty)  {
+typedef NS_ENUM(NSUInteger, NOCDifficulty)  { // you can use NS_OPTIONS instead
     NOCDifficultySimple = 1 << 0,
     NOCDifficultyMedium = 1 << 1,
     NOCDifficultyHard = 1 << 2,
@@ -60,7 +60,7 @@ if (noc_isFloatEqual(1.f, 1.0)) {
 ### HEX (HTML) colors
 Convenience method to decode hex color to UIColor.
 ```objective-c
-[self.aView.demoLabel setBackgroundColor:noc_hexToColor(0xAE323b, 1.f)];
+[self.demoLabel setBackgroundColor:noc_hexToColor(0xAE323b, 1.f)];
 ```
 
 Please refer to the demo for more in depth examples or check out source code.
