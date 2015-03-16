@@ -27,6 +27,7 @@ typedef NS_ENUM(NSUInteger, NOCDifficulty)  {
 @implementation NOCExampleViewController
 
 - (void)loadView {
+    // save reference local for easier access
     _aView = [self loadViewOfClass:[NOCExampleView class]];
 }
 

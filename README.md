@@ -12,6 +12,15 @@ CGSize demoLabelSize = [self.demoLabel.text noc_backwardCompatibleSizeWithFont:s
                                     demoLabelSize.width,
                                     demoLabelSize.height)];
 ```
+
+## UIViewController+NOCViewInitializer:
+To load your custom view class manually and assign instance of this view to UIViewController's view property, simply put in loadView method 
+```objective-c
+- (void)loadView {
+    _aView = [self loadViewOfClass:[NOCExampleView class]];  //_aView is @property of NOCExampleView class stored locally for easier access
+}
+```
+
 ## Macros + functions
 ###Warnings
 The less real warnings in your project the better. Open project settings -> target -> build settings; search for "Treat Warnings as Errors" and set flag to YES. Then all warnings in project are treated as errors. You can write custom warnings this way (refer to the NOCMacros.h for more warnings):
@@ -82,6 +91,7 @@ Copy all files from NOCategories/NOCategories folder.
 This is strongly misadvised as you won't be able to see code updates. Clone or download the source, copy all files from NOCategories folder.
 
 ## ChangeLog
+- 0.3 Added UIViewController+NOCViewInitializer class.
 - 0.2 Added macros, custom warnings, updated demo.
 - 0.1 Added basic project, configured styling. Added demo and NSString+NOCSize class.
 
