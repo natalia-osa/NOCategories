@@ -10,18 +10,17 @@
 
 @implementation UIViewController (NOCViewInitializer)
 
-- (id)loadViewOfClass:(Class)aClass {
-    return [self loadViewOfClass:aClass frame:[[UIScreen mainScreen] applicationFrame]];
+- (id)noc_loadViewOfClass:(Class)aClass {
+    return [self noc_loadViewOfClass:aClass frame:[[UIScreen mainScreen] applicationFrame]];
 }
 
-- (id)loadViewOfClass:(Class)aClass frame:(CGRect)frame {
-    
+- (id)noc_loadViewOfClass:(Class)aClass frame:(CGRect)frame {
     if (![aClass isSubclassOfClass:[UIView class]]) {
         return nil;
     }
     
     UIView *view = [[aClass alloc] initWithFrame:frame];
-    view.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
+    [view setAutoresizingMask:UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin];
     self.view = view;
     
     return view;

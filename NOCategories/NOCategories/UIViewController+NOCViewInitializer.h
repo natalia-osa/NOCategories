@@ -18,7 +18,7 @@
  *
  *  @return Instance of view (if initialized successful), nil otherwise.
  */
-- (id)loadViewOfClass:(Class)aClass;
+- (id)noc_loadViewOfClass:(Class)aClass;
 
 /**
  *  Creates the view with specified class that the controller manages and assigns it to the view property.
@@ -28,6 +28,6 @@
  *
  *  @return Instance of view (if initialized successful), nil otherwise.
  */
-- (id)loadViewOfClass:(Class)aClass frame:(CGRect)frame;
+- (id)noc_loadViewOfClass:(Class)aClass frame:(CGRect)frame;
 
 @end

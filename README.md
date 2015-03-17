@@ -17,7 +17,7 @@ CGSize demoLabelSize = [self.demoLabel.text noc_backwardCompatibleSizeWithFont:s
 To load your custom view class manually and assign instance of this view to UIViewController's view property, simply put in loadView method 
 ```objective-c
 - (void)loadView {
-    _aView = [self loadViewOfClass:[NOCExampleView class]];  //_aView is @property of NOCExampleView class stored locally for easier access
+    _aView = [self noc_loadViewOfClass:[NOCExampleView class]];  //_aView is @property of NOCExampleView class stored locally for easier access
 }
 ```
 
@@ -91,7 +91,7 @@ Copy all files from NOCategories/NOCategories folder.
 This is strongly misadvised as you won't be able to see code updates. Clone or download the source, copy all files from NOCategories folder.
 
 ## ChangeLog
-- 0.3 Added UIViewController+NOCViewInitializer class.
+- 0.3.0 Added UIViewController+NOCViewInitializer class.
 - 0.2 Added macros, custom warnings, updated demo.
 - 0.1 Added basic project, configured styling. Added demo and NSString+NOCSize class.
 
