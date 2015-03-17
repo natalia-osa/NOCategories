@@ -10,6 +10,7 @@
 #import "NOCExampleView.h"
 
 #import "NOCMacros.h"
+#import "UIViewController+NOCViewInitializer.h"
 
 @interface NOCExampleViewController ()
 
@@ -26,13 +27,8 @@ typedef NS_ENUM(NSUInteger, NOCDifficulty)  {
 @implementation NOCExampleViewController
 
 - (void)loadView {
-    CGRect rect = [[UIScreen mainScreen] applicationFrame];
-    NOCExampleView *view = [[NOCExampleView alloc] initWithFrame:rect];
-    [view setAutoresizingMask:UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth];
-    
-    // local for easier access
-    _aView = view;
-    self.view = view;
+    // save reference local for easier access
+    _aView = [self noc_loadViewOfClass:[NOCExampleView class]];
 }
 
 - (void)viewDidLoad {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E0720321AB765BE009C270E /* UIViewController+NOCViewInitializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E0720311AB765BE009C270E /* UIViewController+NOCViewInitializer.m */; };
 		64CD4D371A9B2CE3004D9F4F /* NSString+NOCSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 64CD4D361A9B2CE3004D9F4F /* NSString+NOCSize.m */; };
 		64CD4D3A1A9B30A1004D9F4F /* NOCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 64CD4D391A9B30A1004D9F4F /* NOCAppDelegate.m */; };
 		64CD4D3D1A9B30AB004D9F4F /* NOCExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64CD4D3C1A9B30AB004D9F4F /* NOCExampleViewController.m */; };
@@ -31,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E0720301AB765BE009C270E /* UIViewController+NOCViewInitializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+NOCViewInitializer.h"; path = "NOCategories/UIViewController+NOCViewInitializer.h"; sourceTree = "<group>"; };
+		5E0720311AB765BE009C270E /* UIViewController+NOCViewInitializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+NOCViewInitializer.m"; path = "NOCategories/UIViewController+NOCViewInitializer.m"; sourceTree = "<group>"; };
 		64CD4D351A9B2CE3004D9F4F /* NSString+NOCSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+NOCSize.h"; path = "NOCategories/NSString+NOCSize.h"; sourceTree = "<group>"; };
 		64CD4D361A9B2CE3004D9F4F /* NSString+NOCSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+NOCSize.m"; path = "NOCategories/NSString+NOCSize.m"; sourceTree = "<group>"; };
 		64CD4D381A9B30A1004D9F4F /* NOCAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NOCAppDelegate.h; path = Example/NOCAppDelegate.h; sourceTree = "<group>"; };
@@ -157,6 +160,8 @@
 				64E0BEFC1AA09799007D74D3 /* NOCMacros.m */,
 				64CD4D351A9B2CE3004D9F4F /* NSString+NOCSize.h */,
 				64CD4D361A9B2CE3004D9F4F /* NSString+NOCSize.m */,
+				5E0720301AB765BE009C270E /* UIViewController+NOCViewInitializer.h */,
+				5E0720311AB765BE009C270E /* UIViewController+NOCViewInitializer.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -301,6 +306,7 @@
 				64CD4D371A9B2CE3004D9F4F /* NSString+NOCSize.m in Sources */,
 				64CD4D401A9B30B8004D9F4F /* NOCExampleView.m in Sources */,
 				64CD4D3A1A9B30A1004D9F4F /* NOCAppDelegate.m in Sources */,
+				5E0720321AB765BE009C270E /* UIViewController+NOCViewInitializer.m in Sources */,
 				64E0BEFD1AA09799007D74D3 /* NOCMacros.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
