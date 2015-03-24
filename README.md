@@ -66,6 +66,11 @@ if (noc_isFloatEqual(1.f, 1.0)) {
     NSLog(@"Float and double are equal");
 }
 ```
+### Fixing CGFloat warning with floor/ceil/round operations
+Because CGFloat will be either float or double (depending on the architecture) you will receive warning in case you use either round or roundf. To silence it without casting (uglify code ;)) use:
+```objective-c
+noc_roundCGFloat(1.5)
+```
 ### HEX (HTML) colors
 Convenience method to decode hex color to UIColor.
 ```objective-c
@@ -91,6 +96,7 @@ Copy all files from NOCategories/NOCategories folder.
 This is strongly misadvised as you won't be able to see code updates. Clone or download the source, copy all files from NOCategories folder.
 
 ## ChangeLog
+- 0.4.0 Added noc_round/floor/ceilCGFloat functions. Fixed an error from noc_isFloatMore and noc_isFloatLess functions.
 - 0.3.0 Added UIViewController+NOCViewInitializer class.
 - 0.2 Added macros, custom warnings, updated demo.
 - 0.1 Added basic project, configured styling. Added demo and NSString+NOCSize class.

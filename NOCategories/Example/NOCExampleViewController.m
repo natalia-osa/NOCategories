@@ -47,6 +47,8 @@ typedef NS_ENUM(NSUInteger, NOCDifficulty)  {
     if (noc_isFloatEqual(1.f, 1.0)) {
         NSLog(@"Float and double are equal");
     }
+    // Allows to quickly skip type check on floor ceil round without casting to desired type and without warnings.
+    NSLog(@"%.1f, %.1f, %.1f", noc_floorCGFloat(1.9f), noc_roundCGFloat(1.5), noc_ceilCGFloat(7.1f));
     
     // USING COLORS
     // your graphic supplied colors as hex or rgbs?

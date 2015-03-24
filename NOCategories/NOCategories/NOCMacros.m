@@ -17,7 +17,7 @@ inline BOOL noc_isFloatEqual(CGFloat x, CGFloat y) {
 }
 
 inline BOOL noc_isFloatLess(CGFloat x, CGFloat y) {
-    return (x < y + FLT_EPSILON);
+    return (x < y);
 }
 
 inline BOOL noc_isFloatLessOrEqual(CGFloat x, CGFloat y) {
@@ -25,11 +25,23 @@ inline BOOL noc_isFloatLessOrEqual(CGFloat x, CGFloat y) {
 }
 
 inline BOOL noc_isFloatMore(CGFloat x, CGFloat y) {
-    return (x > y - FLT_EPSILON);
+    return (x > y);
 }
 
 inline BOOL noc_isFloatMoreOrEqual(CGFloat x, CGFloat y) {
     return (noc_isFloatMore(x, y) || noc_isFloatEqual(x, y));
+}
+
+inline CGFloat noc_roundCGFloat(CGFloat x) {
+    return CGFLOAT_IS_DOUBLE ? round(x) : roundf(x);
+}
+
+inline CGFloat noc_floorCGFloat(CGFloat x) {
+    return CGFLOAT_IS_DOUBLE ? floor(x) : floorf(x);
+}
+
+inline CGFloat noc_ceilCGFloat(CGFloat x) {
+    return CGFLOAT_IS_DOUBLE ? ceil(x) : ceilf(x);
 }
 
 #pragma mark - Colors

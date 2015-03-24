@@ -31,7 +31,7 @@
 
 @interface NOCMacros : NSObject
 
-#pragma mark Math
+#pragma mark Math : comparing floats
 
 /**
  *  Checks if both values are moreover the same. Measurement error is equal to FLT_EPSILON.
@@ -41,7 +41,7 @@
 extern BOOL noc_isFloatEqual(CGFloat x, CGFloat y);
 
 /**
- *  Checks if x is less than y. Measurement error is equal to FLT_EPSILON.
+ *  Checks if x is less than y.
  *
  *  @return YES if x < y.
  */
@@ -55,7 +55,7 @@ extern BOOL noc_isFloatLess(CGFloat x, CGFloat y);
 extern BOOL noc_isFloatLessOrEqual(CGFloat x, CGFloat y);
 
 /**
- *  Checks if x is more than y. Measurement error is equal to FLT_EPSILON.
+ *  Checks if x is more than y.
  *
  *  @return YES if x > y.
  */
@@ -67,6 +67,29 @@ extern BOOL noc_isFloatMore(CGFloat x, CGFloat y);
  *  @return YES if x >= y.
  */
 extern BOOL noc_isFloatMoreOrEqual(CGFloat x, CGFloat y);
+
+#pragma mark Math : CGFloat rounding
+
+/**
+ *  Rounds the value of x to nearest full value. Eg 1.1 -> 1.0; 1.5 -> 2.0; 1.6 -> 2.0.
+ *
+ *  @return Closest full value to the x.
+ */
+extern CGFloat noc_roundCGFloat(CGFloat x);
+
+/**
+ *  Cuts the end of value x. Eg 1.1 -> 1.0; 1.6 -> 1.0.
+ *
+ *  @return Smallest full value from the x.
+ */
+extern CGFloat noc_floorCGFloat(CGFloat x);
+
+/**
+ *  Adds to the nearest full value of x. Eg 1.1 -> 2.0; 1.6 -> 2.0.
+ *
+ *  @return Biggest full value from the x.
+ */
+extern CGFloat noc_ceilCGFloat(CGFloat x);
 
 #pragma mark Colors
 
