@@ -8,8 +8,8 @@
 source 'https://rubygems.org'
 
 # Development tools
-gem 'cocoapods', '~> 0.36'
+gem 'cocoapods', '~> 0.36.1'
 
-# Continious integration tools
+# Continuous integration tools
 gem 'rake', '~> 10.4.0'
 gem 'xcpretty', '~> 0.1.6'

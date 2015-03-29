@@ -14,7 +14,7 @@ cache:
 
 env:
   global:
-    - XCODE_INFOPLIST_PATH="Supporting Files/NOCategories-Info.plist"
+    - XCODE_INFOPLIST_PATH="NOCategories/Example/Info.plist"
     - XCODE_WORKSPACE="NOCategories.xcworkspace"
     - XCODE_SCHEME="NOCategories"
     - XCODE_SDK="iphonesimulator8.1"
@@ -30,9 +30,6 @@ before_install:
 
 install:
   - bundle exec rake install
-
-before_script:
-  - bundle exec rake review
 
 script:
   - bundle exec rake ${RAKE_SUITE}
