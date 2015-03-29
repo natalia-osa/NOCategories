@@ -27,6 +27,7 @@ def scheme_config scheme
   {
     "workspace" => ENV["XCODE_WORKSPACE"],
     "scheme" => scheme,
+    "destination" => "platform=iOS Simulator,name=iPhone 5s,OS=8.1",
     "sdk" => ENV["XCODE_SDK"]
   }
 end

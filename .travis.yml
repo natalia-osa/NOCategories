@@ -17,7 +17,7 @@ env:
     - XCODE_INFOPLIST_PATH="NOCategories/Example/Info.plist"
     - XCODE_WORKSPACE="NOCategories.xcworkspace"
     - XCODE_SCHEME="NOCategories"
-    - XCODE_SDK="iphonesimulator8.1"
+    - XCODE_SDK="iphonesimulator"
 
 matrix:
   include:
