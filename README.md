@@ -1,6 +1,7 @@
 [![Version](https://cocoapod-badges.herokuapp.com/v/NOCategories/badge.png)](http://cocoadocs.org/docsets/NOCategories) 
 [![Platform](https://cocoapod-badges.herokuapp.com/p/NOCategories/badge.png)](http://cocoadocs.org/docsets/NOCategories) 
 ![License](https://img.shields.io/badge/license-Apache_2-green.svg?style=flat)
+[![Build Status](https://travis-ci.org/natalia-osa/NOCategories.svg?branch=master)](https://travis-ci.org/natalia-osa/NOCategories)
 
 # NOCategories
 A set of convenience categories.
