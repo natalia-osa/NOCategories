@@ -1,5 +1,6 @@
 [![Version](https://cocoapod-badges.herokuapp.com/v/NOCategories/badge.png)](http://cocoadocs.org/docsets/NOCategories) 
 [![Platform](https://cocoapod-badges.herokuapp.com/p/NOCategories/badge.png)](http://cocoadocs.org/docsets/NOCategories) 
+![License](https://img.shields.io/badge/license-Apache_2-green.svg?style=flat)
 
 # NOCategories
 A set of convenience categories.
@@ -62,7 +63,7 @@ noc_isBitOne(flags, NOCDifficultyHard)
 You should never compare floats etc via ==, because the result can be misleading. To make sure you never implement such error, open project settings -> target -> build settings; search for "Other Warning Flags"; paste "-Wfloat-equal".
 You can use convenience methods to compare floats:
 ```objective-c
-if (noc_isFloatEqual(1.f, 1.0)) {
+if (noc_isCGFloatEqualToCGFloat(1.f, 1.0)) {
     NSLog(@"Float and double are equal");
 }
 ```
@@ -96,6 +97,7 @@ Copy all files from NOCategories/NOCategories folder.
 This is strongly misadvised as you won't be able to see code updates. Clone or download the source, copy all files from NOCategories folder.
 
 ## ChangeLog
+- 0.4.1 Added degrees/radians functions. Added unit tests.
 - 0.4.0 Added noc_round/floor/ceilCGFloat functions. Fixed an error from noc_isFloatMore and noc_isFloatLess functions.
 - 0.3.0 Added UIViewController+NOCViewInitializer class.
 - 0.2 Added macros, custom warnings, updated demo.
@@ -104,7 +106,7 @@ This is strongly misadvised as you won't be able to see code updates. Clone or d
 ## Author
 
 Natalia Osiecka, osiecka.n@gmail.com
-Natalia Osiecka MobileSoftware
+- [Natalia Osiecka](https://github.com/natalia-osa/) ([@vivelee](https://twitter.com/vivelee))
 
 ## License
 

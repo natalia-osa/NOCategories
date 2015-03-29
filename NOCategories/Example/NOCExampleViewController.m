@@ -44,7 +44,7 @@ typedef NS_ENUM(NSUInteger, NOCDifficulty)  {
     // USING MATH
     // You should never compare floats etc via ==.
     // to treat it as an error, open project settings -> target -> build settings; search for "Other Warning Flags"; paste "-Wfloat-equal".
-    if (noc_isFloatEqual(1.f, 1.0)) {
+    if (noc_isCGFloatEqualToCGFloat(1.f, 1.0)) {
         NSLog(@"Float and double are equal");
     }
     // Allows to quickly skip type check on floor ceil round without casting to desired type and without warnings.

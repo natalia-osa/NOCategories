@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5E0720321AB765BE009C270E /* UIViewController+NOCViewInitializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E0720311AB765BE009C270E /* UIViewController+NOCViewInitializer.m */; };
+		64017B721AC7648200230BF7 /* NOCViewInitializerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 64017B711AC7648200230BF7 /* NOCViewInitializerSpec.m */; };
+		6479D5871AC7713800FFF757 /* EXPMatcher+UIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6479D5861AC7713800FFF757 /* EXPMatcher+UIColor.m */; };
 		64CD4D371A9B2CE3004D9F4F /* NSString+NOCSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 64CD4D361A9B2CE3004D9F4F /* NSString+NOCSize.m */; };
 		64CD4D3A1A9B30A1004D9F4F /* NOCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 64CD4D391A9B30A1004D9F4F /* NOCAppDelegate.m */; };
 		64CD4D3D1A9B30AB004D9F4F /* NOCExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64CD4D3C1A9B30AB004D9F4F /* NOCExampleViewController.m */; };
@@ -15,10 +17,11 @@
 		64CD4D421A9B30F3004D9F4F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 64CD4D411A9B30F3004D9F4F /* main.m */; };
 		64CD4D471A9B316C004D9F4F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64CD4D461A9B316C004D9F4F /* Images.xcassets */; };
 		64CD4D4A1A9B32C6004D9F4F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64CD4D431A9B314D004D9F4F /* LaunchScreen.xib */; };
-		64D100E21A9B2940006EF915 /* NOCategoriesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 64D100E11A9B2940006EF915 /* NOCategoriesTests.m */; };
+		64D100E21A9B2940006EF915 /* NOCMacrosSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 64D100E11A9B2940006EF915 /* NOCMacrosSpec.m */; };
 		64E0BEFD1AA09799007D74D3 /* NOCMacros.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E0BEFC1AA09799007D74D3 /* NOCMacros.m */; };
 		64E0BF051AA09D44007D74D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64E0BF031AA09D39007D74D3 /* Foundation.framework */; };
 		64E0BF061AA09D44007D74D3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64E0BF011AA09D2E007D74D3 /* UIKit.framework */; };
+		93449DBEEE7A28CA4E48BC7F /* libPods-NOCategoriesTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E815E14738B1FFE1D84D6820 /* libPods-NOCategoriesTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,10 @@
 /* Begin PBXFileReference section */
 		5E0720301AB765BE009C270E /* UIViewController+NOCViewInitializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+NOCViewInitializer.h"; path = "NOCategories/UIViewController+NOCViewInitializer.h"; sourceTree = "<group>"; };
 		5E0720311AB765BE009C270E /* UIViewController+NOCViewInitializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+NOCViewInitializer.m"; path = "NOCategories/UIViewController+NOCViewInitializer.m"; sourceTree = "<group>"; };
+		64017B711AC7648200230BF7 /* NOCViewInitializerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NOCViewInitializerSpec.m; sourceTree = "<group>"; };
+		6479D5851AC7713800FFF757 /* EXPMatcher+UIColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatcher+UIColor.h"; sourceTree = "<group>"; };
+		6479D5861AC7713800FFF757 /* EXPMatcher+UIColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EXPMatcher+UIColor.m"; sourceTree = "<group>"; };
+		6479D5891AC7718400FFF757 /* TestPrefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestPrefix.pch; sourceTree = "<group>"; };
 		64CD4D351A9B2CE3004D9F4F /* NSString+NOCSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+NOCSize.h"; path = "NOCategories/NSString+NOCSize.h"; sourceTree = "<group>"; };
 		64CD4D361A9B2CE3004D9F4F /* NSString+NOCSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+NOCSize.m"; path = "NOCategories/NSString+NOCSize.m"; sourceTree = "<group>"; };
 		64CD4D381A9B30A1004D9F4F /* NOCAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NOCAppDelegate.h; path = Example/NOCAppDelegate.h; sourceTree = "<group>"; };
@@ -49,11 +56,14 @@
 		64D100C21A9B2940006EF915 /* NOCategories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NOCategories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64D100DB1A9B2940006EF915 /* NOCategoriesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NOCategoriesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64D100E01A9B2940006EF915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		64D100E11A9B2940006EF915 /* NOCategoriesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NOCategoriesTests.m; sourceTree = "<group>"; };
+		64D100E11A9B2940006EF915 /* NOCMacrosSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NOCMacrosSpec.m; sourceTree = "<group>"; };
 		64E0BEFB1AA09799007D74D3 /* NOCMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NOCMacros.h; path = NOCategories/NOCMacros.h; sourceTree = "<group>"; };
 		64E0BEFC1AA09799007D74D3 /* NOCMacros.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NOCMacros.m; path = NOCategories/NOCMacros.m; sourceTree = "<group>"; };
 		64E0BF011AA09D2E007D74D3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		64E0BF031AA09D39007D74D3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B20646D1E79B87510317517D /* Pods-NOCategoriesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NOCategoriesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NOCategoriesTests/Pods-NOCategoriesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C449BF908DE806EBA229C099 /* Pods-NOCategoriesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NOCategoriesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NOCategoriesTests/Pods-NOCategoriesTests.release.xcconfig"; sourceTree = "<group>"; };
+		E815E14738B1FFE1D84D6820 /* libPods-NOCategoriesTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NOCategoriesTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,18 +80,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93449DBEEE7A28CA4E48BC7F /* libPods-NOCategoriesTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49BF87A75A6F1C07271364BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E815E14738B1FFE1D84D6820 /* libPods-NOCategoriesTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6479D5881AC7713E00FFF757 /* Matchers */ = {
+			isa = PBXGroup;
+			children = (
+				6479D5851AC7713800FFF757 /* EXPMatcher+UIColor.h */,
+				6479D5861AC7713800FFF757 /* EXPMatcher+UIColor.m */,
+			);
+			name = Matchers;
+			sourceTree = "<group>";
+		};
 		64D100B91A9B293F006EF915 = {
 			isa = PBXGroup;
 			children = (
 				64D100C41A9B2940006EF915 /* NOCategories */,
 				64D100DE1A9B2940006EF915 /* NOCategoriesTests */,
 				64D100C31A9B2940006EF915 /* Products */,
+				9F5171F6F442B5F9CCD516AD /* Pods */,
+				49BF87A75A6F1C07271364BA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,7 +150,9 @@
 		64D100DE1A9B2940006EF915 /* NOCategoriesTests */ = {
 			isa = PBXGroup;
 			children = (
-				64D100E11A9B2940006EF915 /* NOCategoriesTests.m */,
+				64D100E11A9B2940006EF915 /* NOCMacrosSpec.m */,
+				64017B711AC7648200230BF7 /* NOCViewInitializerSpec.m */,
+				6479D5881AC7713E00FFF757 /* Matchers */,
 				64D100DF1A9B2940006EF915 /* Supporting Files */,
 			);
 			path = NOCategoriesTests;
@@ -130,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				64D100E01A9B2940006EF915 /* Info.plist */,
+				6479D5891AC7718400FFF757 /* TestPrefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -184,6 +217,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9F5171F6F442B5F9CCD516AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B20646D1E79B87510317517D /* Pods-NOCategoriesTests.debug.xcconfig */,
+				C449BF908DE806EBA229C099 /* Pods-NOCategoriesTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -209,9 +251,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 64D100E81A9B2940006EF915 /* Build configuration list for PBXNativeTarget "NOCategoriesTests" */;
 			buildPhases = (
+				262532C0350F1AFCBDFA5FE0 /* Check Pods Manifest.lock */,
 				64D100D71A9B2940006EF915 /* Sources */,
 				64D100D81A9B2940006EF915 /* Frameworks */,
 				64D100D91A9B2940006EF915 /* Resources */,
+				62DE96DCC11F1FF7205119FB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -280,6 +324,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		262532C0350F1AFCBDFA5FE0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		62DE96DCC11F1FF7205119FB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NOCategoriesTests/Pods-NOCategoriesTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		OBJCLEANCUSTOMRUNSCRIPTT /* Objective-Clean Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -315,7 +389,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64D100E21A9B2940006EF915 /* NOCategoriesTests.m in Sources */,
+				64D100E21A9B2940006EF915 /* NOCMacrosSpec.m in Sources */,
+				6479D5871AC7713800FFF757 /* EXPMatcher+UIColor.m in Sources */,
+				64017B721AC7648200230BF7 /* NOCViewInitializerSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,12 +525,16 @@
 		};
 		64D100E91A9B2940006EF915 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B20646D1E79B87510317517D /* Pods-NOCategoriesTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				EXECUTABLE_PREFIX = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = NOCategoriesTests/TestPrefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -468,12 +548,16 @@
 		};
 		64D100EA1A9B2940006EF915 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C449BF908DE806EBA229C099 /* Pods-NOCategoriesTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				EXECUTABLE_PREFIX = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = NOCategoriesTests/TestPrefix.pch;
 				INFOPLIST_FILE = NOCategoriesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

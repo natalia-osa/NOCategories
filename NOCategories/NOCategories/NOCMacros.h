@@ -31,6 +31,18 @@
 
 @interface NOCMacros : NSObject
 
+#pragma mark Math : radians - degree conversion
+
+/**
+ *  Converts degrees to radians.
+ */
+extern CGFloat noc_radians(CGFloat degrees);
+
+/**
+ *  Converts radians to degrees.
+ */
+extern CGFloat noc_degrees(CGFloat radians);
+
 #pragma mark Math : comparing floats
 
 /**
@@ -38,35 +50,35 @@
  *
  *  @return YES if x == y.
  */
-extern BOOL noc_isFloatEqual(CGFloat x, CGFloat y);
+extern BOOL noc_isCGFloatEqualToCGFloat(CGFloat x, CGFloat y);
 
 /**
  *  Checks if x is less than y.
  *
  *  @return YES if x < y.
  */
-extern BOOL noc_isFloatLess(CGFloat x, CGFloat y);
+extern BOOL noc_isCGFloatLessThanCGFloat(CGFloat x, CGFloat y);
 
 /**
  *  Checks if x is less or equal to y. Measurement error is equal to FLT_EPSILON.
  *
  *  @return YES if x <= y.
  */
-extern BOOL noc_isFloatLessOrEqual(CGFloat x, CGFloat y);
+extern BOOL noc_isCGFloatLessOrEqualToCGFloat(CGFloat x, CGFloat y);
 
 /**
  *  Checks if x is more than y.
  *
  *  @return YES if x > y.
  */
-extern BOOL noc_isFloatMore(CGFloat x, CGFloat y);
+extern BOOL noc_isCGFloatMoreThanCGFloat(CGFloat x, CGFloat y);
 
 /**
  *  Checks if x is more or equal to y. Measurement error is equal to FLT_EPSILON.
  *
  *  @return YES if x >= y.
  */
-extern BOOL noc_isFloatMoreOrEqual(CGFloat x, CGFloat y);
+extern BOOL noc_isCGFloatMoreOrEqualToCGFloat(CGFloat x, CGFloat y);
 
 #pragma mark Math : CGFloat rounding
 
