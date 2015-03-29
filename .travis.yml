@@ -1,0 +1,38 @@
+#
+#  .travis.yml
+#  
+#  Created by Natalia Osiecka on 29.3.2015.
+#  Copyright (c) 2015 iOskApps. All rights reserved.
+#
+
+language: objective-c
+osx_image: xcode6.2
+
+cache:
+  directories:
+    - vendor/bundle
+
+env:
+  global:
+    - XCODE_INFOPLIST_PATH="Supporting Files/NOCategories-Info.plist"
+    - XCODE_WORKSPACE="NOCategories.xcworkspace"
+    - XCODE_SCHEME="NOCategories"
+    - XCODE_SDK="iphonesimulator8.1"
+
+matrix:
+  include:
+    - env: RAKE_SUITE=test-unit
+  fast_finish: true
+
+before_install:
+  - bundle config build.nokogiri --use-system-libraries
+  - bundle install --without development --deployment --jobs=3 --retry=3
+
+install:
+  - bundle exec rake install
+
+before_script:
+  - bundle exec rake review
+
+script:
+  - bundle exec rake ${RAKE_SUITE}
