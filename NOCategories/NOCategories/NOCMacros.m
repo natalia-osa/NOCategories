@@ -24,7 +24,9 @@ inline BOOL noc_isCGFloatEqualToCGFloat(CGFloat x, CGFloat y) {
     if (CGFLOAT_IS_DOUBLE) {
         return (fabs(x - y) < DBL_EPSILON);
     } else {
-        return (fabsf(x - y) < FLT_EPSILON);
+		float fx = x;
+		float fy = y;
+		return (fabsf(fx - fy) < FLT_EPSILON);
     }
 }
 
