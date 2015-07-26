@@ -7,75 +7,12 @@
 //
 
 #import "NOCMacros.h"
+#import "NOCCGFloatMath.h"
 #import "EXPMatcher+UIColor.h"
 
 SpecBegin(NOCMacrosSpec)
 
 describe(@"NOCMacros", ^{
-    
-    describe(@"when comparing CGFloats", ^{
-        CGFloat actualValue = 0.5f,  sameValue = 0.5, smallerValue = 0.4999, biggerValue = 0.5001;
-        
-        describe(@"checking equality should return", ^{
-            it(@"YES for same values", ^{
-                expect(noc_isCGFloatEqualToCGFloat(sameValue, actualValue)).to.beTruthy();
-            });
-            it(@"NO for smaller value", ^{
-                expect(noc_isCGFloatEqualToCGFloat(smallerValue, actualValue)).to.beFalsy();
-            });
-            it(@"NO for bigger value", ^{
-                expect(noc_isCGFloatEqualToCGFloat(biggerValue, actualValue)).to.beFalsy();
-            });
-        });
-        
-        describe(@"with X < Y function should return", ^{
-            it(@"NO if X == Y", ^{
-                expect(noc_isCGFloatLessThanCGFloat(sameValue, actualValue)).to.beFalsy();
-            });
-            it(@"YES if X < Y", ^{
-                expect(noc_isCGFloatLessThanCGFloat(smallerValue, actualValue)).to.beTruthy();
-            });
-            it(@"NO if X > Y", ^{
-                expect(noc_isCGFloatLessThanCGFloat(biggerValue, actualValue)).to.beFalsy();
-            });
-        });
-        
-        describe(@"with X <= Y function should return", ^{
-            it(@"YES if X == Y", ^{
-                expect(noc_isCGFloatLessOrEqualToCGFloat(sameValue, actualValue)).to.beTruthy();
-            });
-            it(@"YES if X < Y", ^{
-                expect(noc_isCGFloatLessOrEqualToCGFloat(smallerValue, actualValue)).to.beTruthy();
-            });
-            it(@"NO if X > Y", ^{
-                expect(noc_isCGFloatLessOrEqualToCGFloat(biggerValue, actualValue)).to.beFalsy();
-            });
-        });
-        
-        describe(@"with X > Y function should return", ^{
-            it(@"NO if X == Y", ^{
-                expect(noc_isCGFloatMoreThanCGFloat(sameValue, actualValue)).to.beFalsy();
-            });
-            it(@"NO if X < Y", ^{
-                expect(noc_isCGFloatMoreThanCGFloat(smallerValue, actualValue)).to.beFalsy();
-            });
-            it(@"YES if X > Y", ^{
-                expect(noc_isCGFloatMoreThanCGFloat(biggerValue, actualValue)).to.beTruthy();
-            });
-        });
-        
-        describe(@"with X >= Y function should return", ^{
-            it(@"YES if X == Y", ^{
-                expect(noc_isCGFloatMoreOrEqualToCGFloat(sameValue, actualValue)).to.beTruthy();
-            });
-            it(@"NO if X < Y", ^{
-                expect(noc_isCGFloatMoreOrEqualToCGFloat(smallerValue, actualValue)).to.beFalsy();
-            });
-            it(@"YES if X > Y", ^{
-                expect(noc_isCGFloatMoreOrEqualToCGFloat(biggerValue, actualValue)).to.beTruthy();
-            });
-        });
-    });
     
     describe(@"when working with bit values", ^{
         __block NSInteger bitNumber;
@@ -112,19 +49,6 @@ describe(@"NOCMacros", ^{
             it(@"1 in third bit", ^{
                 expect(noc_isBitOne(bitNumber, NOCTestEnumTwo)).to.equal(0);
             });
-        });
-    });
-    
-    describe(@"when converting angles from", ^{
-        it(@"radians to degreess, should return appropriate value", ^{
-            expect(noc_radians(90)).to.beCloseToWithin(1.57, 0.001);
-        });
-        it(@"degress to radians, should return appropriate value", ^{
-            expect(noc_degrees(1.57)).to.beCloseToWithin(90.0, 0.1);
-        });
-        it(@"degrees(radians(degrees)), should return equal value to degrees", ^{
-            CGFloat degrees = 273;
-            expect(noc_degrees(noc_radians(degrees))).to.beCloseToWithin(degrees, FLT_EPSILON);
         });
     });
    

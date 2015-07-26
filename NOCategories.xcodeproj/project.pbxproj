@@ -18,9 +18,12 @@
 		64CD4D471A9B316C004D9F4F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64CD4D461A9B316C004D9F4F /* Images.xcassets */; };
 		64CD4D4A1A9B32C6004D9F4F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64CD4D431A9B314D004D9F4F /* LaunchScreen.xib */; };
 		64D100E21A9B2940006EF915 /* NOCMacrosSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 64D100E11A9B2940006EF915 /* NOCMacrosSpec.m */; };
+		64DCA92E1B64F1C0005534CF /* NOCCGFloatMathSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 64DCA92D1B64F1C0005534CF /* NOCCGFloatMathSpec.m */; };
 		64E0BEFD1AA09799007D74D3 /* NOCMacros.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E0BEFC1AA09799007D74D3 /* NOCMacros.m */; };
 		64E0BF051AA09D44007D74D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64E0BF031AA09D39007D74D3 /* Foundation.framework */; };
 		64E0BF061AA09D44007D74D3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64E0BF011AA09D2E007D74D3 /* UIKit.framework */; };
+		64FA46C11B623A370046D5CF /* NOCCGFloatMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FA46C01B623A370046D5CF /* NOCCGFloatMath.m */; };
+		64FA46C51B623C3D0046D5CF /* NSAttributedString+NOCSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FA46C41B623C3D0046D5CF /* NSAttributedString+NOCSize.m */; };
 		93449DBEEE7A28CA4E48BC7F /* libPods-NOCategoriesTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E815E14738B1FFE1D84D6820 /* libPods-NOCategoriesTests.a */; };
 /* End PBXBuildFile section */
 
@@ -57,10 +60,15 @@
 		64D100DB1A9B2940006EF915 /* NOCategoriesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NOCategoriesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64D100E01A9B2940006EF915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64D100E11A9B2940006EF915 /* NOCMacrosSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NOCMacrosSpec.m; sourceTree = "<group>"; };
+		64DCA92D1B64F1C0005534CF /* NOCCGFloatMathSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NOCCGFloatMathSpec.m; sourceTree = "<group>"; };
 		64E0BEFB1AA09799007D74D3 /* NOCMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NOCMacros.h; path = NOCategories/NOCMacros.h; sourceTree = "<group>"; };
 		64E0BEFC1AA09799007D74D3 /* NOCMacros.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NOCMacros.m; path = NOCategories/NOCMacros.m; sourceTree = "<group>"; };
 		64E0BF011AA09D2E007D74D3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		64E0BF031AA09D39007D74D3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		64FA46BF1B623A370046D5CF /* NOCCGFloatMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NOCCGFloatMath.h; path = NOCategories/NOCCGFloatMath.h; sourceTree = "<group>"; };
+		64FA46C01B623A370046D5CF /* NOCCGFloatMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NOCCGFloatMath.m; path = NOCategories/NOCCGFloatMath.m; sourceTree = "<group>"; };
+		64FA46C31B623C3D0046D5CF /* NSAttributedString+NOCSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSAttributedString+NOCSize.h"; path = "NOCategories/NSAttributedString/NSAttributedString+NOCSize.h"; sourceTree = "<group>"; };
+		64FA46C41B623C3D0046D5CF /* NSAttributedString+NOCSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSAttributedString+NOCSize.m"; path = "NOCategories/NSAttributedString/NSAttributedString+NOCSize.m"; sourceTree = "<group>"; };
 		B20646D1E79B87510317517D /* Pods-NOCategoriesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NOCategoriesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NOCategoriesTests/Pods-NOCategoriesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C449BF908DE806EBA229C099 /* Pods-NOCategoriesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NOCategoriesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NOCategoriesTests/Pods-NOCategoriesTests.release.xcconfig"; sourceTree = "<group>"; };
 		E815E14738B1FFE1D84D6820 /* libPods-NOCategoriesTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NOCategoriesTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,7 +137,7 @@
 			children = (
 				64CD4D381A9B30A1004D9F4F /* NOCAppDelegate.h */,
 				64CD4D391A9B30A1004D9F4F /* NOCAppDelegate.m */,
-				64D100ED1A9B296D006EF915 /* Categories */,
+				64FA46C61B623C4D0046D5CF /* NOCategories */,
 				64D100EC1A9B2969006EF915 /* Example */,
 				64D100EB1A9B2952006EF915 /* Resources */,
 				64E0BF001AA09D17007D74D3 /* Frameworks */,
@@ -151,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				64D100E11A9B2940006EF915 /* NOCMacrosSpec.m */,
+				64DCA92D1B64F1C0005534CF /* NOCCGFloatMathSpec.m */,
 				64017B711AC7648200230BF7 /* NOCViewInitializerSpec.m */,
 				6479D5881AC7713E00FFF757 /* Matchers */,
 				64D100DF1A9B2940006EF915 /* Supporting Files */,
@@ -189,12 +198,9 @@
 		64D100ED1A9B296D006EF915 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				64E0BEFB1AA09799007D74D3 /* NOCMacros.h */,
-				64E0BEFC1AA09799007D74D3 /* NOCMacros.m */,
-				64CD4D351A9B2CE3004D9F4F /* NSString+NOCSize.h */,
-				64CD4D361A9B2CE3004D9F4F /* NSString+NOCSize.m */,
-				5E0720301AB765BE009C270E /* UIViewController+NOCViewInitializer.h */,
-				5E0720311AB765BE009C270E /* UIViewController+NOCViewInitializer.m */,
+				64FA46C91B623C670046D5CF /* UIViewController */,
+				64FA46C81B623C5F0046D5CF /* NSAttributedString */,
+				64FA46C71B623C5A0046D5CF /* NSString */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -215,6 +221,53 @@
 				64E0BF011AA09D2E007D74D3 /* UIKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		64FA46C21B623C0B0046D5CF /* Macros / Inlines */ = {
+			isa = PBXGroup;
+			children = (
+				64E0BEFB1AA09799007D74D3 /* NOCMacros.h */,
+				64E0BEFC1AA09799007D74D3 /* NOCMacros.m */,
+				64FA46BF1B623A370046D5CF /* NOCCGFloatMath.h */,
+				64FA46C01B623A370046D5CF /* NOCCGFloatMath.m */,
+			);
+			name = "Macros / Inlines";
+			sourceTree = "<group>";
+		};
+		64FA46C61B623C4D0046D5CF /* NOCategories */ = {
+			isa = PBXGroup;
+			children = (
+				64FA46C21B623C0B0046D5CF /* Macros / Inlines */,
+				64D100ED1A9B296D006EF915 /* Categories */,
+			);
+			name = NOCategories;
+			sourceTree = "<group>";
+		};
+		64FA46C71B623C5A0046D5CF /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				64CD4D351A9B2CE3004D9F4F /* NSString+NOCSize.h */,
+				64CD4D361A9B2CE3004D9F4F /* NSString+NOCSize.m */,
+			);
+			name = NSString;
+			sourceTree = "<group>";
+		};
+		64FA46C81B623C5F0046D5CF /* NSAttributedString */ = {
+			isa = PBXGroup;
+			children = (
+				64FA46C31B623C3D0046D5CF /* NSAttributedString+NOCSize.h */,
+				64FA46C41B623C3D0046D5CF /* NSAttributedString+NOCSize.m */,
+			);
+			name = NSAttributedString;
+			sourceTree = "<group>";
+		};
+		64FA46C91B623C670046D5CF /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5E0720301AB765BE009C270E /* UIViewController+NOCViewInitializer.h */,
+				5E0720311AB765BE009C270E /* UIViewController+NOCViewInitializer.m */,
+			);
+			name = UIViewController;
 			sourceTree = "<group>";
 		};
 		9F5171F6F442B5F9CCD516AD /* Pods */ = {
@@ -273,7 +326,8 @@
 		64D100BA1A9B293F006EF915 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				CLASSPREFIX = NOC;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = iOskApps;
 				TargetAttributes = {
 					64D100C11A9B2940006EF915 = {
@@ -380,6 +434,8 @@
 				64CD4D371A9B2CE3004D9F4F /* NSString+NOCSize.m in Sources */,
 				64CD4D401A9B30B8004D9F4F /* NOCExampleView.m in Sources */,
 				64CD4D3A1A9B30A1004D9F4F /* NOCAppDelegate.m in Sources */,
+				64FA46C51B623C3D0046D5CF /* NSAttributedString+NOCSize.m in Sources */,
+				64FA46C11B623A370046D5CF /* NOCCGFloatMath.m in Sources */,
 				5E0720321AB765BE009C270E /* UIViewController+NOCViewInitializer.m in Sources */,
 				64E0BEFD1AA09799007D74D3 /* NOCMacros.m in Sources */,
 			);
@@ -389,6 +445,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64DCA92E1B64F1C0005534CF /* NOCCGFloatMathSpec.m in Sources */,
 				64D100E21A9B2940006EF915 /* NOCMacrosSpec.m in Sources */,
 				6479D5871AC7713800FFF757 /* EXPMatcher+UIColor.m in Sources */,
 				64017B721AC7648200230BF7 /* NOCViewInitializerSpec.m in Sources */,
@@ -437,6 +494,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -502,8 +560,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = NOCategories/Example/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ioskapps.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WARNING_CFLAGS = "-Wfloat-equal";
 			};
@@ -514,10 +574,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = NOCategories/Example/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ioskapps.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WARNING_CFLAGS = "-Wfloat-equal";
 			};
@@ -541,6 +603,8 @@
 				);
 				INFOPLIST_FILE = NOCategoriesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ioskapps.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NOCategories.app/NOCategories";
 			};
@@ -560,6 +624,7 @@
 				GCC_PREFIX_HEADER = NOCategoriesTests/TestPrefix.pch;
 				INFOPLIST_FILE = NOCategoriesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ioskapps.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NOCategories.app/NOCategories";
 			};

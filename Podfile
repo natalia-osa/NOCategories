@@ -1,6 +1,7 @@
-platform :ios, '5.1.1'
+platform :ios, '6.0'
+inhibit_all_warnings!
 
 target :NOCategoriesTests do
-  pod 'Specta', '~> 0.4'
-  pod 'Expecta', '~> 0.2.4'
+  pod 'Specta', '~> 1.0'
+  pod 'Expecta', '~> 1.0'
 end

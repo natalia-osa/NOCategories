@@ -8,6 +8,7 @@
 
 #import "EXPMatcher+UIColor.h"
 #import "NOCMacros.h"
+#import "NOCCGFloatMath.h"
 
 EXPMatcherImplementationBegin(beSameColor, (UIColor *expected)) {
     BOOL actualIsNil = (actual == nil);

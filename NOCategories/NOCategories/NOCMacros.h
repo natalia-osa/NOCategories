@@ -6,7 +6,6 @@
 //  Copyright (c) 2015 iOskApps. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
 #pragma mark - String shortcuts
@@ -30,78 +29,6 @@
 #define _NOC_PRAGMA(p)                  _Pragma(#p)
 
 @interface NOCMacros : NSObject
-
-#pragma mark Math : radians - degree conversion
-
-/**
- *  Converts degrees to radians.
- */
-extern CGFloat noc_radians(CGFloat degrees);
-
-/**
- *  Converts radians to degrees.
- */
-extern CGFloat noc_degrees(CGFloat radians);
-
-#pragma mark Math : comparing floats
-
-/**
- *  Checks if both values are moreover the same. Measurement error is equal to FLT_EPSILON.
- *
- *  @return YES if x == y.
- */
-extern BOOL noc_isCGFloatEqualToCGFloat(CGFloat x, CGFloat y);
-
-/**
- *  Checks if x is less than y.
- *
- *  @return YES if x < y.
- */
-extern BOOL noc_isCGFloatLessThanCGFloat(CGFloat x, CGFloat y);
-
-/**
- *  Checks if x is less or equal to y. Measurement error is equal to FLT_EPSILON.
- *
- *  @return YES if x <= y.
- */
-extern BOOL noc_isCGFloatLessOrEqualToCGFloat(CGFloat x, CGFloat y);
-
-/**
- *  Checks if x is more than y.
- *
- *  @return YES if x > y.
- */
-extern BOOL noc_isCGFloatMoreThanCGFloat(CGFloat x, CGFloat y);
-
-/**
- *  Checks if x is more or equal to y. Measurement error is equal to FLT_EPSILON.
- *
- *  @return YES if x >= y.
- */
-extern BOOL noc_isCGFloatMoreOrEqualToCGFloat(CGFloat x, CGFloat y);
-
-#pragma mark Math : CGFloat rounding
-
-/**
- *  Rounds the value of x to nearest full value. Eg 1.1 -> 1.0; 1.5 -> 2.0; 1.6 -> 2.0.
- *
- *  @return Closest full value to the x.
- */
-extern CGFloat noc_roundCGFloat(CGFloat x);
-
-/**
- *  Cuts the end of value x. Eg 1.1 -> 1.0; 1.6 -> 1.0.
- *
- *  @return Smallest full value from the x.
- */
-extern CGFloat noc_floorCGFloat(CGFloat x);
-
-/**
- *  Adds to the nearest full value of x. Eg 1.1 -> 2.0; 1.6 -> 2.0.
- *
- *  @return Biggest full value from the x.
- */
-extern CGFloat noc_ceilCGFloat(CGFloat x);
 
 #pragma mark Colors
 

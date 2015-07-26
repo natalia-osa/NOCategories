@@ -14,6 +14,16 @@ CGSize demoLabelSize = [self.demoLabel.text noc_backwardCompatibleSizeWithFont:s
                                     demoLabelSize.width,
                                     demoLabelSize.height)];
 ```
+## NSAttributedString+NOCSize.h:
+In your view layoutSubviews method simply put:
+```objective-c
+NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] init];
+NSDictionary *attributes = @{NSFontAttributeName : [UIFont fontWithName:@"HelveticaNeue" size:15]};
+[attributedString appendAttributedString:[[NSAttributedString alloc] initWithString:@"Attributed String1\n" attributes:attributes]];
+[attributedString appendAttributedString:[[NSAttributedString alloc] initWithString:@"Attributed String2\n" attributes:attributes]];
+CGSize attrubutedStringSize = [attributedString noc_backwardCompatibleSizeConstrainedToSize:CGSizeMake(150, 200)];
+[self.demoLabel setFrame:CGRectMake(0, 0, attrubutedStringSize.width, attrubutedStringSize.height)];
+```
 
 ## UIViewController+NOCViewInitializer:
 To load your custom view class manually and assign instance of this view to UIViewController's view property, simply put in loadView method 
@@ -67,6 +77,7 @@ You can use convenience methods to compare floats:
 if (noc_isCGFloatEqualToCGFloat(1.f, 1.0)) {
     NSLog(@"Float and double are equal");
 }
+NSLog(@"%.2f", noc_CGFloatAbs(-5));
 ```
 ### Fixing CGFloat warning with floor/ceil/round operations
 Because CGFloat will be either float or double (depending on the architecture) you will receive warning in case you use either round or roundf. To silence it without casting (uglify code ;)) use:
@@ -115,4 +126,4 @@ Available under the Apache 2.0 license. See the LICENSE file for more info.
 
 ## Requirements
 
-Requires Xcode 6, targeting either iOS 5.1.1 or higher.
+Requires Xcode 6, targeting either iOS 6.0 or higher.
