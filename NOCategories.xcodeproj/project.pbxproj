@@ -18,12 +18,12 @@
 		64CD4D471A9B316C004D9F4F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64CD4D461A9B316C004D9F4F /* Images.xcassets */; };
 		64CD4D4A1A9B32C6004D9F4F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64CD4D431A9B314D004D9F4F /* LaunchScreen.xib */; };
 		64D100E21A9B2940006EF915 /* NOCMacrosSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 64D100E11A9B2940006EF915 /* NOCMacrosSpec.m */; };
+		64D2D5E41BC3BAC90084CF48 /* NSAttributedString+NOCSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 64D2D5E31BC3BAC90084CF48 /* NSAttributedString+NOCSize.m */; };
 		64DCA92E1B64F1C0005534CF /* NOCCGFloatMathSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 64DCA92D1B64F1C0005534CF /* NOCCGFloatMathSpec.m */; };
 		64E0BEFD1AA09799007D74D3 /* NOCMacros.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E0BEFC1AA09799007D74D3 /* NOCMacros.m */; };
 		64E0BF051AA09D44007D74D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64E0BF031AA09D39007D74D3 /* Foundation.framework */; };
 		64E0BF061AA09D44007D74D3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64E0BF011AA09D2E007D74D3 /* UIKit.framework */; };
 		64FA46C11B623A370046D5CF /* NOCCGFloatMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FA46C01B623A370046D5CF /* NOCCGFloatMath.m */; };
-		64FA46C51B623C3D0046D5CF /* NSAttributedString+NOCSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FA46C41B623C3D0046D5CF /* NSAttributedString+NOCSize.m */; };
 		93449DBEEE7A28CA4E48BC7F /* libPods-NOCategoriesTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E815E14738B1FFE1D84D6820 /* libPods-NOCategoriesTests.a */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +60,8 @@
 		64D100DB1A9B2940006EF915 /* NOCategoriesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NOCategoriesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64D100E01A9B2940006EF915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64D100E11A9B2940006EF915 /* NOCMacrosSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NOCMacrosSpec.m; sourceTree = "<group>"; };
+		64D2D5E21BC3BAC90084CF48 /* NSAttributedString+NOCSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSAttributedString+NOCSize.h"; path = "NOCategories/NSAttributedString+NOCSize.h"; sourceTree = "<group>"; };
+		64D2D5E31BC3BAC90084CF48 /* NSAttributedString+NOCSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSAttributedString+NOCSize.m"; path = "NOCategories/NSAttributedString+NOCSize.m"; sourceTree = "<group>"; };
 		64DCA92D1B64F1C0005534CF /* NOCCGFloatMathSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NOCCGFloatMathSpec.m; sourceTree = "<group>"; };
 		64E0BEFB1AA09799007D74D3 /* NOCMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NOCMacros.h; path = NOCategories/NOCMacros.h; sourceTree = "<group>"; };
 		64E0BEFC1AA09799007D74D3 /* NOCMacros.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NOCMacros.m; path = NOCategories/NOCMacros.m; sourceTree = "<group>"; };
@@ -67,8 +69,6 @@
 		64E0BF031AA09D39007D74D3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		64FA46BF1B623A370046D5CF /* NOCCGFloatMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NOCCGFloatMath.h; path = NOCategories/NOCCGFloatMath.h; sourceTree = "<group>"; };
 		64FA46C01B623A370046D5CF /* NOCCGFloatMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NOCCGFloatMath.m; path = NOCategories/NOCCGFloatMath.m; sourceTree = "<group>"; };
-		64FA46C31B623C3D0046D5CF /* NSAttributedString+NOCSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSAttributedString+NOCSize.h"; path = "NOCategories/NSAttributedString/NSAttributedString+NOCSize.h"; sourceTree = "<group>"; };
-		64FA46C41B623C3D0046D5CF /* NSAttributedString+NOCSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSAttributedString+NOCSize.m"; path = "NOCategories/NSAttributedString/NSAttributedString+NOCSize.m"; sourceTree = "<group>"; };
 		B20646D1E79B87510317517D /* Pods-NOCategoriesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NOCategoriesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NOCategoriesTests/Pods-NOCategoriesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C449BF908DE806EBA229C099 /* Pods-NOCategoriesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NOCategoriesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NOCategoriesTests/Pods-NOCategoriesTests.release.xcconfig"; sourceTree = "<group>"; };
 		E815E14738B1FFE1D84D6820 /* libPods-NOCategoriesTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NOCategoriesTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -255,8 +255,8 @@
 		64FA46C81B623C5F0046D5CF /* NSAttributedString */ = {
 			isa = PBXGroup;
 			children = (
-				64FA46C31B623C3D0046D5CF /* NSAttributedString+NOCSize.h */,
-				64FA46C41B623C3D0046D5CF /* NSAttributedString+NOCSize.m */,
+				64D2D5E21BC3BAC90084CF48 /* NSAttributedString+NOCSize.h */,
+				64D2D5E31BC3BAC90084CF48 /* NSAttributedString+NOCSize.m */,
 			);
 			name = NSAttributedString;
 			sourceTree = "<group>";
@@ -434,7 +434,7 @@
 				64CD4D371A9B2CE3004D9F4F /* NSString+NOCSize.m in Sources */,
 				64CD4D401A9B30B8004D9F4F /* NOCExampleView.m in Sources */,
 				64CD4D3A1A9B30A1004D9F4F /* NOCAppDelegate.m in Sources */,
-				64FA46C51B623C3D0046D5CF /* NSAttributedString+NOCSize.m in Sources */,
+				64D2D5E41BC3BAC90084CF48 /* NSAttributedString+NOCSize.m in Sources */,
 				64FA46C11B623A370046D5CF /* NOCCGFloatMath.m in Sources */,
 				5E0720321AB765BE009C270E /* UIViewController+NOCViewInitializer.m in Sources */,
 				64E0BEFD1AA09799007D74D3 /* NOCMacros.m in Sources */,
@@ -601,6 +601,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = NOCategoriesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
@@ -622,6 +623,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = NOCategoriesTests/TestPrefix.pch;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = NOCategoriesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ioskapps.$(PRODUCT_NAME:rfc1034identifier)";

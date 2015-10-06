@@ -35,6 +35,24 @@ describe(@"NOCMacros", ^{
             expect(bitNumber).to.equal(0);
         });
         
+        describe(@"when working with flags", ^{
+            NSInteger testNumber = 99;
+            describe(@"number 99 (== 0110 0011), should", ^{
+                it(@"return YES for bit 0 ON", ^{
+                    expect(noc_isBitAtIndexOne(testNumber, 0)).to.equal(1);
+                });
+                it(@"return NO for bit 1 OFF", ^{
+                    expect(noc_isBitAtIndexOne(testNumber, 1)).toNot.equal(0);
+                });
+                it(@"return YES for bit 2 OFF", ^{
+                    expect(noc_isBitAtIndexOne(testNumber, 2)).to.equal(0);
+                });
+                it(@"return NO for bit 3 ON", ^{
+                    expect(noc_isBitAtIndexOne(testNumber, 3)).toNot.equal(1);
+                });
+            });
+        });
+        
         context(@"checking bit value of number 2 should result with", ^{
             beforeEach(^{
                 bitNumber = 2;

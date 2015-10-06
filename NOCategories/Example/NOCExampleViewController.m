@@ -36,8 +36,7 @@ typedef NS_ENUM(NSUInteger, NOCDifficulty)  {
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // USING STRING MACROS
-    [self.aView.demoLabel setText:noc_lString(@"This is very long text\nwith new line esapes\nand dynamic size.\n\nThe red bg should show\nyou the size of the label.\nIt should fit the text.", nil)];
+    [self.aView.demoLabel setText:@"This a kind of a long text :) We will separate it to a few lines so you can easly see linebreaking. \nHere is 2nd line."];
     
     // Calculating string size (example of normal string in view class)
     NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] init];
@@ -71,6 +70,10 @@ typedef NS_ENUM(NSUInteger, NOCDifficulty)  {
     noc_setBitOne(flags, NOCDifficultyHard);
     noc_setBitOne(flags, NOCDifficultySimple);
     NSLog(@"flags = %i %i %i", noc_isBitOne(flags, NOCDifficultySimple), noc_isBitOne(flags, NOCDifficultyMedium), noc_isBitOne(flags, NOCDifficultyHard));
+    
+    // ANOTHER WAY FOR FLAGS
+    BOOL eventTypeAvailable = noc_isBitAtIndexOne(99, 1);
+    NSLog(@"flag is on: %i", eventTypeAvailable);
 }
 
 @end

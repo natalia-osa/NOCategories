@@ -8,15 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-#pragma mark - String shortcuts
-#define noc_lfString(m, ...)            [NSString stringWithFormat:NSLocalizedString(m, nil), __VA_ARGS__] // Localized + Format
-#define noc_fString(m, ...)             [NSString stringWithFormat:m, __VA_ARGS__] // Format
-#define noc_lString(m, ...)             NSLocalizedString(m, nil) // Localized
-
 #pragma mark Bit operations
 #define noc_isBitOne(number, bit)       (BOOL)(number & bit)
 #define noc_setBitOne(number, bit)      number |= bit
 #define noc_setBitZero(number, bit)     number &= ~bit
+#define noc_isBitAtIndexOne(number, bit) ((number & (1 << bit)) != 0) // eg noc_isBitAtIndexOne(99, x) is YES for x = 0,1,5,6 because 99 = 0110 0011
 
 #pragma mark Warnings
 #define noc_warnWork(m)                 _NOC_PRAGMA(message "[WorkInProgress] " m)

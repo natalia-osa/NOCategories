@@ -11,7 +11,7 @@
 @implementation UIViewController (NOCViewInitializer)
 
 - (id)noc_loadViewOfClass:(Class)aClass {
-    return [self noc_loadViewOfClass:aClass frame:[[UIScreen mainScreen] applicationFrame]];
+    return [self noc_loadViewOfClass:aClass frame:[[UIScreen mainScreen] bounds]];
 }
 
 - (id)noc_loadViewOfClass:(Class)aClass frame:(CGRect)frame {
