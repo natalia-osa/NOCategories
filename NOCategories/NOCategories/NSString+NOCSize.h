@@ -18,6 +18,6 @@
  *
  * @return The width and height of the resulting string’s bounding box. These values may be rounded up to the nearest whole number.
  */
-- (CGSize)noc_backwardCompatibleSizeWithFont:(UIFont *)font constrainedToSize:(CGSize)size;
+- (CGSize)noc_backwardCompatibleSizeWithFont:(nonnull UIFont *)font constrainedToSize:(CGSize)size;
 
 @end

@@ -10,7 +10,7 @@
 
 @implementation NSString (NOCSize)
 
-- (CGSize)noc_backwardCompatibleSizeWithFont:(UIFont *)font constrainedToSize:(CGSize)size {
+- (CGSize)noc_backwardCompatibleSizeWithFont:(nonnull UIFont *)font constrainedToSize:(CGSize)size {
     CGSize textSize;
     if ([self respondsToSelector:@selector(boundingRectWithSize:options:attributes:context:)]) {
         textSize = [self boundingRectWithSize:size options:(NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading) attributes:@{NSFontAttributeName:font} context:nil].size;

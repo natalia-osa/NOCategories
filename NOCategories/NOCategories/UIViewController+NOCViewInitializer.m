@@ -10,11 +10,11 @@
 
 @implementation UIViewController (NOCViewInitializer)
 
-- (id)noc_loadViewOfClass:(Class)aClass {
+- (nullable __kindof UIView *)noc_loadViewOfClass:(nonnull Class)aClass {
     return [self noc_loadViewOfClass:aClass frame:[[UIScreen mainScreen] bounds]];
 }
 
-- (id)noc_loadViewOfClass:(Class)aClass frame:(CGRect)frame {
+- (nullable __kindof UIView *)noc_loadViewOfClass:(nonnull Class)aClass frame:(CGRect)frame {
     if (![aClass isSubclassOfClass:[UIView class]]) {
         return nil;
     }
