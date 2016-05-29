@@ -27,7 +27,7 @@ inline BOOL noc_isCGFloatEqualToCGFloat(CGFloat x, CGFloat y) {
 }
 
 inline BOOL noc_isCGFloatLessThanCGFloat(CGFloat x, CGFloat y) {
-    return (x < y);
+    return (x - noc_CGFloatEpsilon() < y);
 }
 
 inline BOOL noc_isCGFloatLessOrEqualToCGFloat(CGFloat x, CGFloat y) {
@@ -35,7 +35,7 @@ inline BOOL noc_isCGFloatLessOrEqualToCGFloat(CGFloat x, CGFloat y) {
 }
 
 inline BOOL noc_isCGFloatMoreThanCGFloat(CGFloat x, CGFloat y) {
-    return (x > y);
+    return (x + noc_CGFloatEpsilon() > y);
 }
 
 inline BOOL noc_isCGFloatMoreOrEqualToCGFloat(CGFloat x, CGFloat y) {
